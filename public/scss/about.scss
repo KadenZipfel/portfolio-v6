@@ -1,3 +1,15 @@
 .about {
   min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 5rem;
+
+  &__text {
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    font-weight: 300;
+  }
 }

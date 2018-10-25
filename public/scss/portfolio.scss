@@ -1,3 +1,65 @@
 .portfolio {
   min-height: 80vh;
+  display: flex;
+  align-items: center;
+
+  &__item {
+    width: 33%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__img {
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &__title {
+      color: white;
+      font-size: 3.5rem;
+      font-weight: 300;
+      // Add gradient to text
+      background-image: -webkit-linear-gradient(left, #f7f8f8, #acbb78); /* For Chrome and Safari */
+      background-image:    -moz-linear-gradient(left, #f7f8f8, #acbb78); /* For old Fx (3.6 to 15) */
+      background-image:     -ms-linear-gradient(left, #f7f8f8, #acbb78); /* For pre-releases of IE 10*/
+      background-image:      -o-linear-gradient(left, #f7f8f8, #acbb78); /* For old Opera (11.1 to 12.0) */
+      background-image:         linear-gradient(to right, #f7f8f8, #acbb78); /* Standard syntax; must be last */
+      color:transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+    }
+
+    &__link {
+      color: white;
+      // Add gradient to text
+      background-image: -webkit-linear-gradient(left, #f7f8f8, #acbb78); /* For Chrome and Safari */
+      background-image:    -moz-linear-gradient(left, #f7f8f8, #acbb78); /* For old Fx (3.6 to 15) */
+      background-image:     -ms-linear-gradient(left, #f7f8f8, #acbb78); /* For pre-releases of IE 10*/
+      background-image:      -o-linear-gradient(left, #f7f8f8, #acbb78); /* For old Opera (11.1 to 12.0) */
+      background-image:         linear-gradient(to right, #f7f8f8, #acbb78); /* Standard syntax; must be last */
+      color:transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+
+      &:hover, 
+      &:focus, 
+      &:active {
+        color: white;
+        // Add gradient to text
+        background-image: -webkit-linear-gradient(left, #f7f8f8, #acbb78); /* For Chrome and Safari */
+        background-image:    -moz-linear-gradient(left, #f7f8f8, #acbb78); /* For old Fx (3.6 to 15) */
+        background-image:     -ms-linear-gradient(left, #f7f8f8, #acbb78); /* For pre-releases of IE 10*/
+        background-image:      -o-linear-gradient(left, #f7f8f8, #acbb78); /* For old Opera (11.1 to 12.0) */
+        background-image:         linear-gradient(to right, #f7f8f8, #acbb78); /* Standard syntax; must be last */
+        color:transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        text-transform: none;
+      }
+    }
+  }
 }
