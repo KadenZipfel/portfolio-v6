@@ -10,7 +10,13 @@ html {
 
 body {
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  background: #000000;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #434343, #000000);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #434343, #000000);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
 
 .about {
   min-height: 80vh; }
@@ -22,7 +28,27 @@ body {
   min-height: 80vh; }
 
 .nav {
-  min-height: 10vh; }
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.8rem; }
+  .nav__brand {
+    height: 50%;
+    flex: 1; }
+    .nav__brand img {
+      height: 100%; }
+  .nav__right {
+    display: flex;
+    width: 33%;
+    justify-content: space-between; }
+    .nav__right__link {
+      color: rgba(255, 255, 255, 0.6); }
+      .nav__right__link:hover, .nav__right__link:focus, .nav__right__link:active {
+        text-decoration: none;
+        color: white; }
+    .nav__right__item {
+      list-style: none; }
 
 .portfolio {
   min-height: 80vh; }

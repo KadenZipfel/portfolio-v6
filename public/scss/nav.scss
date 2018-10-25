@@ -1,3 +1,37 @@
 .nav {
-  min-height: 10vh;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.8rem;
+
+  &__brand {
+    height: 50%;
+    flex: 1;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  &__right {
+    display: flex;
+    width: 33%;
+    justify-content: space-between;
+
+    &__link {
+      color: rgba(white, 0.6);
+      
+      &:hover, 
+      &:focus, 
+      &:active {
+        text-decoration: none;
+        color: white;
+      }
+    }
+
+    &__item {
+      list-style: none;
+    }
+  }
 }
