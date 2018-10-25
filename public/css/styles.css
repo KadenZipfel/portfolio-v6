@@ -11,3 +11,21 @@ html {
 body {
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif; }
+
+.about {
+  min-height: 80vh; }
+
+.contact {
+  min-height: 80vh; }
+
+.hero {
+  min-height: 80vh; }
+
+.nav {
+  min-height: 10vh; }
+
+.portfolio {
+  min-height: 80vh; }
+
+.footer {
+  min-height: 10vh; }
