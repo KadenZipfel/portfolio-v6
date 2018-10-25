@@ -25,7 +25,50 @@ body {
   min-height: 80vh; }
 
 .hero {
-  min-height: 80vh; }
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3rem 0; }
+  .hero__title {
+    color: white;
+    margin: 0;
+    font-weight: 900;
+    font-size: 10rem;
+    background-image: -webkit-linear-gradient(left, #f7f8f8, #acbb78);
+    /* For Chrome and Safari */
+    background-image: -moz-linear-gradient(left, #f7f8f8, #acbb78);
+    /* For old Fx (3.6 to 15) */
+    background-image: -ms-linear-gradient(left, #f7f8f8, #acbb78);
+    /* For pre-releases of IE 10*/
+    background-image: -o-linear-gradient(left, #f7f8f8, #acbb78);
+    /* For old Opera (11.1 to 12.0) */
+    background-image: linear-gradient(to right, #f7f8f8, #acbb78);
+    /* Standard syntax; must be last */
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text; }
+    .hero__title--sub {
+      margin-top: -1rem;
+      opacity: 0.8; }
+  .hero__text {
+    font-size: 3rem;
+    font-weight: 300;
+    text-align: right;
+    background-image: -webkit-linear-gradient(right, #f7f8f8, #acbb78);
+    /* For Chrome and Safari */
+    background-image: -moz-linear-gradient(right, #f7f8f8, #acbb78);
+    /* For old Fx (3.6 to 15) */
+    background-image: -ms-linear-gradient(right, #f7f8f8, #acbb78);
+    /* For pre-releases of IE 10*/
+    background-image: -o-linear-gradient(right, #f7f8f8, #acbb78);
+    /* For old Opera (11.1 to 12.0) */
+    background-image: linear-gradient(to left, #f7f8f8, #acbb78);
+    /* Standard syntax; must be last */
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    opacity: 0.8; }
 
 .nav {
   height: 15vh;
