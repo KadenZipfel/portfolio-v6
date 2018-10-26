@@ -1,11 +1,11 @@
 .footer {
-  min-height: 10vh;
+  min-height: 5vh;
   display: flex;
   justify-content: center;
   align-items: center;
 
   &__text {
-    color: white;
+    color: rgba(white, 0.5);
     font-weight: 300;
     margin: 0;
   }

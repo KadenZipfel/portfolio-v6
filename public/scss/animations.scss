@@ -1,0 +1,38 @@
+@keyframes slideright {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: inherit;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideleft {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 0.8;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

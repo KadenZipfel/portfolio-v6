@@ -1,5 +1,5 @@
 .hero {
-  min-height: 75vh;
+  min-height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -11,14 +11,15 @@
     font-weight: 900;
     font-size: 10rem;
     // Add gradient to text
-    background-image: -webkit-linear-gradient(left, #f7f8f8, #acbb78); /* For Chrome and Safari */
-    background-image:    -moz-linear-gradient(left, #f7f8f8, #acbb78); /* For old Fx (3.6 to 15) */
-    background-image:     -ms-linear-gradient(left, #f7f8f8, #acbb78); /* For pre-releases of IE 10*/
-    background-image:      -o-linear-gradient(left, #f7f8f8, #acbb78); /* For old Opera (11.1 to 12.0) */
-    background-image:         linear-gradient(to right, #f7f8f8, #acbb78); /* Standard syntax; must be last */
+    background-image: -webkit-linear-gradient(left, white, #f9fbff); /* For Chrome and Safari */
+    background-image:    -moz-linear-gradient(left, white, #f9fbff); /* For old Fx (3.6 to 15) */
+    background-image:     -ms-linear-gradient(left, white, #f9fbff); /* For pre-releases of IE 10*/
+    background-image:      -o-linear-gradient(left, white, #f9fbff); /* For old Opera (11.1 to 12.0) */
+    background-image:         linear-gradient(to right, white, #f9fbff); /* Standard syntax; must be last */
     color:transparent;
     -webkit-background-clip: text;
     background-clip: text;
+    // animation: 1s slideright 1s ease;
 
     &--sub {
       margin-top: -1rem;
@@ -28,18 +29,19 @@
 
   &__text {
     font-size: 3rem;
-    margin-bottom: 5rem;
+    line-height: 4rem;
     font-weight: 300;
     text-align: right;
     // Add gradient to text
-    background-image: -webkit-linear-gradient(right, #f7f8f8, #acbb78); /* For Chrome and Safari */
-    background-image:    -moz-linear-gradient(right, #f7f8f8, #acbb78); /* For old Fx (3.6 to 15) */
-    background-image:     -ms-linear-gradient(right, #f7f8f8, #acbb78); /* For pre-releases of IE 10*/
-    background-image:      -o-linear-gradient(right, #f7f8f8, #acbb78); /* For old Opera (11.1 to 12.0) */
-    background-image:         linear-gradient(to left, #f7f8f8, #acbb78); /* Standard syntax; must be last */
+    background-image: -webkit-linear-gradient(right, white, #f9fbff); /* For Chrome and Safari */
+    background-image:    -moz-linear-gradient(right, white, #f9fbff); /* For old Fx (3.6 to 15) */
+    background-image:     -ms-linear-gradient(right, white, #f9fbff); /* For pre-releases of IE 10*/
+    background-image:      -o-linear-gradient(right, white, #f9fbff); /* For old Opera (11.1 to 12.0) */
+    background-image:         linear-gradient(to left, white, #f9fbff); /* Standard syntax; must be last */
     color:transparent;
     -webkit-background-clip: text;
     background-clip: text;
-    opacity: 0.8
+    // opacity: 0;
+    // animation: 1s slideright 2s forwards;
   }
 }

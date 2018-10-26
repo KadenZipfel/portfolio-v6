@@ -6,6 +6,12 @@
   align-items: center;
   padding: 5rem;
 
+  &__title {
+    margin-top: 0;
+    margin-bottom: 3rem;
+    font-weight: 300;
+  }
+
   &__text {
     text-align: center;
     font-size: 1.8rem;

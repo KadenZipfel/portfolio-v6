@@ -8,6 +8,8 @@
 
 html {
   font-size: 62.5%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -22,10 +24,16 @@ body {
 .bg {
   // Background from uigradients.com
   background: white;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, white, #EFEFBB);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, white, #EFEFBB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to bottom, white, #f9fbff);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, white, #f9fbff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-hr {
-  opacity: 0.5;
+.up {
+  border-radius: 50%;
+  color: gray;
+  position: fixed;
+  bottom: 10%;
+  right: 5%;
+  opacity: 0;
+  transition: all .5s;
 }
