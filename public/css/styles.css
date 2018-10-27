@@ -299,3 +299,28 @@ body {
     opacity: 1; }
   100% {
     opacity: 0; } }
+
+@keyframes slideinout {
+  0% {
+    opacity: 0;
+    transform: translateY(1000px); }
+  15% {
+    opacity: 1;
+    transform: translateY(0); }
+  85% {
+    opacity: 1;
+    transform: translateY(0); }
+  100% {
+    opacity: 0;
+    transform: translateY(1000px); } }
+
+.flash {
+  position: fixed;
+  bottom: 3rem;
+  left: 3rem;
+  text-align: center;
+  padding: 2rem 4rem;
+  font-weight: 300;
+  color: white;
+  background: darkgray;
+  animation: 5s slideinout forwards; }

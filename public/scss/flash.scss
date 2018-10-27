@@ -1,0 +1,11 @@
+.flash {
+  position: fixed;
+  bottom: 3rem;
+  left: 3rem;
+  text-align: center;
+  padding: 2rem 4rem;
+  font-weight: 300;
+  color: white;
+  background: darkgray;
+  animation: 5s slideinout forwards;
+}
