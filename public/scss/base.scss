@@ -37,3 +37,25 @@ body {
   opacity: 0;
   transition: all .5s;
 }
+
+// Override all highlighted text color for all browsers
+::selection {
+  background-color: black;
+  color: white;
+}
+::-moz-selection {
+  background-color: black;
+  color: white;
+}
+::-o-selection {
+  background-color: black;
+  color: white;
+}
+::-ms-selection {
+  background-color: black;
+  color: white;
+}
+::-webkit-selection {
+  background-color: black;
+  color: white;
+}
