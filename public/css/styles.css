@@ -93,6 +93,9 @@ body {
   font-family: 'Roboto';
   min-height: 80vh;
   padding: 0; }
+  @media (max-width: 800px) {
+    .contact {
+      padding: 5rem 0; } }
   .contact__form {
     height: 100%;
     display: flex;
@@ -314,12 +317,22 @@ body {
   .portfolio__items {
     display: flex;
     align-items: center; }
+    @media (max-width: 1200px) {
+      .portfolio__items {
+        flex-direction: column;
+        justify-content: space-evenly; } }
   .portfolio__item {
     width: 33%;
     padding: 3rem;
     display: flex;
     flex-direction: column;
     align-items: center; }
+    @media (max-width: 1200px) {
+      .portfolio__item {
+        width: 66%; } }
+    @media (max-width: 800px) {
+      .portfolio__item {
+        width: 90%; } }
     .portfolio__item__img {
       width: 100%; }
       .portfolio__item__img img {
@@ -332,6 +345,7 @@ body {
       color: white;
       font-size: 3.5rem;
       font-weight: 300;
+      text-align: center;
       background-image: -webkit-linear-gradient(left, #f7f8f8, #acbb78);
       /* For Chrome and Safari */
       background-image: -moz-linear-gradient(left, #f7f8f8, #acbb78);
