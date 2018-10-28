@@ -5,6 +5,14 @@
   justify-content: space-between;
   padding: 3rem 0;
 
+  @media(max-width: 1200px) {
+    padding-top: 10vh;
+  }
+
+  @media(max-width: 800px) {
+    margin-top: 10vh;
+  }
+
   &__title {
     color: white;
     margin: 0;
@@ -16,10 +24,17 @@
     background-image:     -ms-linear-gradient(left, white, #f9fbff); /* For pre-releases of IE 10*/
     background-image:      -o-linear-gradient(left, white, #f9fbff); /* For old Opera (11.1 to 12.0) */
     background-image:         linear-gradient(to right, white, #f9fbff); /* Standard syntax; must be last */
-    color:transparent;
+    color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
-    // animation: 1s slideright 1s ease;
+
+    @media(max-width: 1200px) {
+      font-size: 8rem;
+    }
+
+    @media(max-width: 800px) {
+      font-size: 4rem;
+    }
 
     &--sub {
       margin-top: -1rem;
@@ -41,7 +56,11 @@
     color:transparent;
     -webkit-background-clip: text;
     background-clip: text;
-    // opacity: 0;
-    // animation: 1s slideright 2s forwards;
+
+    @media(max-width: 800px) {
+      font-size: 2.6rem;
+      line-height: 3rem;
+      margin-bottom: -3rem;
+    }
   }
 }
