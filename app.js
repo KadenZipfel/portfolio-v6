@@ -60,6 +60,14 @@ app.post('/', (req, res) => {
   res.redirect('back');
 });
 
+app.get('/natours', (req, res) => {
+  res.sendFile(__dirname + '/public/projects/Natours/index.html');
+});
+
+app.get('/nexter', (req, res) => {
+  res.sendFile(__dirname + '/public/projects/Nexter/index.html');
+});
+
 app.get('*', (req, res) => {
   res.render('error');
 });
