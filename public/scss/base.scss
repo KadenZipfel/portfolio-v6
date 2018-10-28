@@ -15,6 +15,7 @@ html {
 body {
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
   // Background from uigradients.com
   background: #000000;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to top, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
@@ -36,4 +37,26 @@ body {
   right: 5%;
   opacity: 0;
   transition: all .5s;
+}
+
+// Override all highlighted text color for all browsers
+::selection {
+  background-color: black;
+  color: white;
+}
+::-moz-selection {
+  background-color: black;
+  color: white;
+}
+::-o-selection {
+  background-color: black;
+  color: white;
+}
+::-ms-selection {
+  background-color: black;
+  color: white;
+}
+::-webkit-selection {
+  background-color: black;
+  color: white;
 }

@@ -5,6 +5,10 @@
   font-family: 'Roboto';
   min-height: 80vh;
   padding: 0;
+
+  @media(max-width: 800px) {
+    padding: 5rem 0;
+  }
   
   &__form {
     height: 100%;
