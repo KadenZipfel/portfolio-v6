@@ -1,0 +1,53 @@
+.error {
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5rem 0;
+
+  @media(max-width: 800px) {
+    margin-top: 5vh;
+    min-height: 90vh;
+  }
+
+  &__title {
+    color: white;
+    margin: 0;
+    font-weight: 900;
+    font-size: 20rem;
+    // Add gradient to text
+    background-image: -webkit-linear-gradient(left, white, #f9fbff); /* For Chrome and Safari */
+    background-image:    -moz-linear-gradient(left, white, #f9fbff); /* For old Fx (3.6 to 15) */
+    background-image:     -ms-linear-gradient(left, white, #f9fbff); /* For pre-releases of IE 10*/
+    background-image:      -o-linear-gradient(left, white, #f9fbff); /* For old Opera (11.1 to 12.0) */
+    background-image:         linear-gradient(to right, white, #f9fbff); /* Standard syntax; must be last */
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    @media(max-width: 800px) {
+      font-size: 12rem;
+    }
+  }
+
+  &__text {
+    font-size: 5rem;
+    line-height: 6rem;
+    font-weight: 300;
+    text-align: right;
+    // Add gradient to text
+    background-image: -webkit-linear-gradient(right, white, #f9fbff); /* For Chrome and Safari */
+    background-image:    -moz-linear-gradient(right, white, #f9fbff); /* For old Fx (3.6 to 15) */
+    background-image:     -ms-linear-gradient(right, white, #f9fbff); /* For pre-releases of IE 10*/
+    background-image:      -o-linear-gradient(right, white, #f9fbff); /* For old Opera (11.1 to 12.0) */
+    background-image:         linear-gradient(to left, white, #f9fbff); /* Standard syntax; must be last */
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    @media(max-width: 800px) {
+      font-size: 2.6rem;
+      line-height: 3rem;
+    }
+  }
+}

@@ -60,6 +60,10 @@ app.post('/', (req, res) => {
   res.redirect('back');
 });
 
+app.get('*', (req, res) => {
+  res.render('error');
+});
+
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {

@@ -29,6 +29,12 @@ body {
   background: linear-gradient(to bottom, white, #f9fbff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+.bg-2 {
+  width: 100vw;
+  background: #000000;
+  background: linear-gradient(to bottom, #000000, #0c0c0c);
+}
+
 .up {
   border-radius: 50%;
   color: gray;
@@ -70,6 +76,10 @@ body {
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
+
+  @media(max-width: 1200px) {
+    width: 0;
+  }
 }
 
 /* Track */
