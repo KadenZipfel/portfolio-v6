@@ -65,3 +65,24 @@ body {
   background-color: black;
   color: white;
 }
+
+// Style scrollbar
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(black, 0); 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(black, 0.6); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(black, 0.8); 
+}
