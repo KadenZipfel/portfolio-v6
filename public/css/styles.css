@@ -37,6 +37,10 @@ body {
   right: 5%;
   opacity: 0;
   transition: all .5s; }
+  @media (max-width: 1200px) {
+    .up {
+      bottom: 5%;
+      right: 5%; } }
 
 ::selection {
   background-color: black;
