@@ -7,3 +7,10 @@ window.onscroll = function() {
     up.style.opacity = "0";
   }
 }
+
+$('.up').on('click', () => {
+  $.smoothScroll({
+    scrollElement: $('body'),
+    scrollTarget: '#'
+  });
+});

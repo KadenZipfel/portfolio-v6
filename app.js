@@ -44,7 +44,7 @@ app.post('/', (req, res) => {
   // setup email data
   let mailOptions = {
     from: '"Contact Form" <kaden.zipfel@hotmail.com>', // sender address
-    to: 'kaden.zipfel@hotmail.com', // list of receivers
+    to: 'contact@kadenzipfel.com, kaden.zipfel@hotmail.com', // list of receivers
     subject: req.body.subject + ' - ' + req.body.email, // Subject line
     text: req.body.message, // plain text body
   };
