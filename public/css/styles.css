@@ -75,9 +75,6 @@ body {
       width: 0; } }
 
 /* Track */
-::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0); }
-
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: rgba(0, 0, 0, 0.6); }
