@@ -64,8 +64,8 @@ app.get('/natours', (req, res) => {
   res.sendFile(__dirname + '/public/projects/Natours/index.html');
 });
 
-app.get('/nexter', (req, res) => {
-  res.sendFile(__dirname + '/public/projects/Nexter/index.html');
+app.get('/startup', (req, res) => {
+  res.sendFile(__dirname + '/public/projects/startup/index.html');
 });
 
 app.get('*', (req, res) => {
