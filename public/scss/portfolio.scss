@@ -12,11 +12,25 @@
     color: white;
   }
 
-  &__subtitle {
-    margin-top: 5rem;
-    margin-bottom: 0;
-    font-weight: 300;
+  &__subtitles {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     color: white;
+    // Add gradient to text
+    background-image: -webkit-linear-gradient(left, white, #f9fbff); /* For Chrome and Safari */
+    background-image:    -moz-linear-gradient(left, white, #f9fbff); /* For old Fx (3.6 to 15) */
+    background-image:     -ms-linear-gradient(left, white, #f9fbff); /* For pre-releases of IE 10*/
+    background-image:      -o-linear-gradient(left, white, #f9fbff); /* For old Opera (11.1 to 12.0) */
+    background-image:         linear-gradient(to right, white, #f9fbff); /* Standard syntax; must be last */
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    
+    @media(max-width: 1200px) {
+      display: none;
+    }
   }
 
   &__items {
@@ -100,6 +114,17 @@
         -webkit-background-clip: text;
         background-clip: text;
         text-transform: none;
+      }
+    }
+
+    &__github {
+      color: rgba(255, 255, 255, 0.8);
+      margin-left: .5rem;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: white;
       }
     }
   }

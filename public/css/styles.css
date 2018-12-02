@@ -237,7 +237,7 @@ body {
       height: 100%; }
   .nav__right {
     display: flex;
-    width: 33%;
+    width: 50%;
     justify-content: space-between;
     align-items: center;
     margin: 0; }
@@ -250,7 +250,8 @@ body {
         text-decoration: none;
         color: white; }
     .nav__right__item {
-      list-style: none; }
+      list-style: none;
+      margin-right: 5rem; }
     .nav__right__icon {
       color: rgba(255, 255, 255, 0.6); }
       .nav__right__icon:hover, .nav__right__icon:focus, .nav__right__icon:active {
@@ -311,6 +312,10 @@ body {
     .mob-nav__right__item {
       list-style: none;
       color: rgba(255, 255, 255, 0.6); }
+    .mob-nav__right__icons {
+      display: flex;
+      width: 66%;
+      justify-content: space-evenly; }
 
 .portfolio {
   min-height: 80vh;
@@ -323,11 +328,28 @@ body {
     margin-bottom: 0;
     font-weight: 300;
     color: white; }
-  .portfolio__subtitle {
-    margin-top: 5rem;
-    margin-bottom: 0;
-    font-weight: 300;
-    color: white; }
+  .portfolio__subtitles {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    background-image: -webkit-linear-gradient(left, white, #f9fbff);
+    /* For Chrome and Safari */
+    background-image: -moz-linear-gradient(left, white, #f9fbff);
+    /* For old Fx (3.6 to 15) */
+    background-image: -ms-linear-gradient(left, white, #f9fbff);
+    /* For pre-releases of IE 10*/
+    background-image: -o-linear-gradient(left, white, #f9fbff);
+    /* For old Opera (11.1 to 12.0) */
+    background-image: linear-gradient(to right, white, #f9fbff);
+    /* Standard syntax; must be last */
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text; }
+    @media (max-width: 1200px) {
+      .portfolio__subtitles {
+        display: none; } }
   .portfolio__items {
     display: flex;
     align-items: center; }
@@ -404,6 +426,11 @@ body {
         -webkit-background-clip: text;
         background-clip: text;
         text-transform: none; }
+    .portfolio__item__github {
+      color: rgba(255, 255, 255, 0.8);
+      margin-left: .5rem; }
+      .portfolio__item__github:hover, .portfolio__item__github:focus, .portfolio__item__github:active {
+        color: white; }
 
 .footer {
   min-height: 5vh;

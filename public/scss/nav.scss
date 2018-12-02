@@ -26,7 +26,7 @@
 
   &__right {
     display: flex;
-    width: 33%;
+    width: 50%;
     justify-content: space-between;
     align-items: center;
     margin: 0;
@@ -48,6 +48,7 @@
 
     &__item {
       list-style: none;
+      margin-right: 5rem;
     }
 
     &__icon {
@@ -133,6 +134,12 @@
     &__item {
       list-style: none;
       color: rgba(white, 0.6);
+    }
+
+    &__icons {
+      display: flex;
+      width: 66%;
+      justify-content: space-evenly;
     }
   }
 }
