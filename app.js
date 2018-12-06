@@ -60,8 +60,12 @@ app.post('/', (req, res) => {
   res.redirect('back');
 });
 
-app.get('/natours', (req, res) => {
-  res.sendFile(__dirname + '/public/projects/Natours/index.html');
+app.get('/foto', (req, res) => {
+  res.sendFile(__dirname + '/public/projects/foto/index.html');
+});
+
+app.get('/foto/gallery', (req, res) => {
+  res.sendFile(__dirname + '/public/projects/foto/gallery.html');
 });
 
 app.get('/startup', (req, res) => {

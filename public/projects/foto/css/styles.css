@@ -23,9 +23,8 @@ body {
   animation: 1s fadein forwards; }
   @media (max-width: 1024px) {
     .landing {
-      background-image: url("https://images.unsplash.com/photo-1542372712-fc07597133cd?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d7a1e88bbfd89195d6772e421a65005c&auto=format&fit=crop&w=1834&q=80");
-      background-size: 150%;
-      background-position: bottom; } }
+      background-size: auto;
+      background-position: left; } }
   .landing__header {
     position: absolute;
     bottom: 26%;
